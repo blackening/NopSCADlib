@@ -101,6 +101,7 @@ M3_low_cap_screw = ["M3_low_cap", "M3 low cap", hs_cap,   3, 5.5, 2,    1.5, 2.0
 
 M3_grub_screw    = ["M3_grub", "M3 grub",       hs_grub,  3,   0, 0,    2.5, 1.5, 0,   M3_washer, M3_nut,   M3_tap_radius,    M3_clearance_radius];
 M4_grub_screw    = ["M4_grub", "M4 grub",       hs_grub,  4,   0, 0,    2.4, 2.5, 0,   M4_washer, M4_nut,   M4_tap_radius,    M4_clearance_radius];
+M5_grub_screw    = ["M5_grub", "M5 grub",       hs_grub,  5,   0, 0,    2.4, 2.5, 0,   M5_washer, M5_nut,   M5_tap_radius,    M5_clearance_radius];
 
 No2_screw        = ["No2", "No2 pan wood",      hs_pan, 2.2, 4.2, 1.7,    0,   0, 0, M2p5_washer, false,    No2_pilot_radius, No2_clearance_radius];
 No4_screw        = ["No4", "No4 pan wood",      hs_pan, 3.0, 5.5, 2.0,    0,   0, 0 ,M3p5_washer, false,    No4_pilot_radius, No4_clearance_radius];

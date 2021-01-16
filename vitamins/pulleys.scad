@@ -39,6 +39,17 @@ GT2x16_toothed_idler = ["GT2x16_toothed_idler", "GT2",   16,  9.75, GT2x6,  6.5,
 GT2x16_plain_idler   = ["GT2x16_plain_idler",   "GT2",    0,  9.63, GT2x6,  6.5,  13, 0,   3, 13.0, 1.0, 0, 0,    false,         0];
 GT2x16x7_plain_idler = ["GT2x16x7_plain_idler", "GT2",    0,  9.63, GT2x6,  7.0,  13, 0,   3, 13.0, 1.0, 0, 0,    false,         0];
 
+// Grabbing the designs from Powge
+// Naming for the following: BELT_TYPE X TEETH X BELT_WIDTH 
+// Not sure about the grub screw length / hub width
+GT2x40x6_pulley      = ["GT2x40x6_pulley",      "GT2",   40, 24.95, GT2x6,  7.0,  18, 9.0, 5, 30.0, 1.0, 6, 3.75, M4_grub_screw, 2];
+GT2x60x6_pulley      = ["GT2x60x6_pulley",      "GT2",   60, 37.69, GT2x6,  7.0,  20, 9.0, 5, 42.0, 1.0, 6, 3.75, M5_grub_screw, 2];
+GT2x80x6_pulley      = ["GT2x80x6_pulley",      "GT2",   80, 50.42, GT2x6,  7.0,  35, 9.0, 5, 55.0, 1.0, 6, 3.75, M5_grub_screw, 2];
+
+// Helper function to change the bore diameter
+function set_pulley_bore(pulley, bore_diameter_in_mm) =
+    [ for (i = [0 : len(pulley)]) if(i != 8) pulley[i] else bore_diameter_in_mm ];
+
 pulleys = [T5x10_pulley,
            T2p5x16_pulley,
            GT2x20um_pulley,
